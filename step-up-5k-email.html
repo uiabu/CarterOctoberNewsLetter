@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Step Up Against Child Abuse 5K – April 25</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #ECECEC; font-family: 'DM Sans', Arial, sans-serif; color: #1A1A2E; -webkit-text-size-adjust: 100%; }
+
+    /* Email Wrapper */
+    .email-wrapper { max-width: 620px; margin: 32px auto; background: #ffffff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 32px rgba(0,0,0,0.12); }
+
+    /* Preheader */
+    .preheader { display: none; font-size: 1px; color: transparent; max-height: 0; overflow: hidden; }
+
+    /* Header */
+    .header { background: #ffffff; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .header-logo { display: flex; align-items: center; gap: 10px; }
+    .logo-circle { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; letter-spacing: 0.5px; color: #fff; flex-shrink: 0; }
+    .logo-mlh .logo-circle { background: linear-gradient(135deg, #C0392B, #922B21); }
+    .logo-carter .logo-circle { background: linear-gradient(135deg, #1A3A6B, #2E5FA3); }
+    .logo-text { font-family: 'DM Sans', sans-serif; }
+    .logo-name { font-size: 13px; font-weight: 600; color: #1A1A2E; line-height: 1.2; }
+    .logo-sub { font-size: 10px; font-weight: 400; color: #888; text-transform: uppercase; letter-spacing: 0.8px; }
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, #E0E0E0 20%, #E0E0E0 80%, transparent); margin: 0; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(165deg, #0D2244 0%, #1A3A6B 40%, #C0392B 100%);
+      padding: 64px 32px 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(192,57,43,0.3) 0%, transparent 60%),
+                  radial-gradient(ellipse at 20% 80%, rgba(46,95,163,0.4) 0%, transparent 55%);
+    }
+    .hero-ribbon {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 40px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      position: relative;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: #F4A261;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(255,255,255,0.85);
+      font-weight: 300;
+      margin-bottom: 36px;
+      position: relative;
+      letter-spacing: 0.3px;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: #C0392B;
+      color: #ffffff !important;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 6px;
+      height: 48px;
+      line-height: 20px;
+      position: relative;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 20px rgba(192,57,43,0.5);
+      transition: all 0.2s;
+    }
+    .btn-primary:hover { background: #A93226; }
+
+    /* Event Details Card */
+    .details-section { background: #F5F7FA; padding: 40px 32px; }
+    .details-section h2 { font-family: 'Playfair Display', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 24px; font-weight: 700; }
+    .details-grid { display: table; width: 100%; border-collapse: collapse; }
+    .details-col { display: table-cell; width: 50%; vertical-align: top; padding: 0 8px; }
+    .details-col:first-child { padding-left: 0; border-right: 1px solid #DDE2EC; }
+    .details-col:last-child { padding-left: 24px; padding-right: 0; }
+    .detail-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px; }
+    .detail-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .detail-text { font-size: 15px; font-weight: 500; color: #1A1A2E; line-height: 1.4; }
+    .detail-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #999; font-weight: 500; margin-bottom: 3px; }
+
+    /* Mission Section */
+    .mission-section { background: #ffffff; padding: 48px 40px; }
+    .mission-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #C0392B; font-weight: 700; margin-bottom: 12px; }
+    .mission-section h2 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #1A1A2E; margin-bottom: 20px; line-height: 1.25; }
+    .mission-section p { font-size: 15px; line-height: 1.75; color: #444; margin-bottom: 14px; }
+    .mission-accent { width: 48px; height: 3px; background: linear-gradient(90deg, #C0392B, #1A3A6B); border-radius: 2px; margin-bottom: 24px; }
+
+    /* Dynamic Block */
+    .dynamic-section { background: linear-gradient(135deg, #0D2244 0%, #1A3A6B 100%); padding: 48px 40px; text-align: center; }
+    .dynamic-section h2 { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: #ffffff; margin-bottom: 16px; }
+    .dynamic-section p { font-size: 15px; color: rgba(255,255,255,0.78); line-height: 1.7; margin-bottom: 10px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .dynamic-section p:last-of-type { margin-bottom: 32px; }
+
+    /* Secondary CTA */
+    .secondary-section { background: #ffffff; padding: 48px 40px; text-align: center; }
+    .secondary-section p.lead { font-size: 18px; font-weight: 600; color: #1A1A2E; margin-bottom: 8px; font-family: 'Playfair Display', serif; }
+    .secondary-section p.sub { font-size: 15px; color: #666; line-height: 1.65; margin-bottom: 28px; max-width: 420px; margin-left: auto; margin-right: auto; }
+    .btn-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #1A3A6B !important;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 6px;
+      border: 2px solid #1A3A6B;
+      letter-spacing: 0.2px;
+    }
+    .btn-ghost {
+      display: inline-block;
+      background: #F5F7FA;
+      color: #444 !important;
+      font-family: 'DM Sans', Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 13px 28px;
+      border-radius: 6px;
+      border: 2px solid #E0E4EC;
+      letter-spacing: 0.2px;
+    }
+
+    /* Footer */
+    .footer { background: #F0F2F6; padding: 32px 40px; text-align: center; }
+    .footer-logos { display: flex; align-items: center; justify-content: center; gap: 24px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #DDE2EC; flex-wrap: wrap; }
+    .footer-org { font-size: 12px; font-weight: 600; color: #444; }
+    .footer-divider-v { width: 1px; height: 20px; background: #CCC; }
+    .footer p { font-size: 12px; color: #888; line-height: 1.7; margin-bottom: 6px; }
+    .footer-social { margin: 16px 0; }
+    .footer-social a { display: inline-block; width: 32px; height: 32px; background: #DDE2EC; border-radius: 50%; margin: 0 4px; line-height: 32px; font-size: 14px; text-decoration: none; color: #555; }
+    .footer-links { margin-top: 12px; }
+    .footer-links a { font-size: 11px; color: #999; text-decoration: none; margin: 0 8px; letter-spacing: 0.5px; }
+    .footer-links a:hover { color: #C0392B; }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .email-wrapper { margin: 0; border-radius: 0; }
+      .header { padding: 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .hero { padding: 48px 20px 56px; }
+      .hero h1 { font-size: 30px; }
+      .hero-sub { font-size: 16px; }
+      .details-section { padding: 32px 20px; }
+      .details-grid { display: block; }
+      .details-col { display: block; width: 100%; padding: 0 0 20px 0 !important; border-right: none !important; border-bottom: 1px solid #DDE2EC; margin-bottom: 20px; }
+      .details-col:last-child { border-bottom: none; padding-bottom: 0 !important; }
+      .mission-section, .dynamic-section, .secondary-section, .footer { padding: 36px 20px; }
+      .btn-group { flex-direction: column; align-items: center; }
+      .btn-outline, .btn-ghost { width: 100%; max-width: 280px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preheader -->
+  <div class="preheader">Be part of something bigger on April 25.</div>
+
+  <div class="email-wrapper">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-logo logo-mlh">
+        <div class="logo-circle">MLH</div>
+        <div class="logo-text">
+          <div class="logo-name">Mary Lee's House</div>
+          <div class="logo-sub">Child Advocacy Center</div>
+        </div>
+      </div>
+      <div class="header-logo logo-carter">
+        <div class="logo-circle">CIL</div>
+        <div class="logo-text">
+          <div class="logo-name">Carter Injury Law</div>
+          <div class="logo-sub">Event Sponsor</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-ribbon">Community Event · April 25, 2025</div>
+      <h1>Step Up Against<br><em>Child Abuse</em> 5K</h1>
+      <p class="hero-sub">Saturday, April 25 &nbsp;·&nbsp; 8:00 AM – 12:00 PM</p>
+      <a href="#" class="btn-primary">Register Now</a>
+    </div>
+
+    <!-- EVENT DETAILS CARD -->
+    <div class="details-section">
+      <h2>Event Details</h2>
+      <div class="details-grid">
+        <div class="details-col">
+          <div class="detail-item">
+            <div class="detail-icon">📅</div>
+            <div>
+              <div class="detail-label">Date</div>
+              <div class="detail-text">Saturday, April 25</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">⏰</div>
+            <div>
+              <div class="detail-label">Time</div>
+              <div class="detail-text">8:00 AM – 12:00 PM</div>
+            </div>
+          </div>
+        </div>
+        <div class="details-col">
+          <div class="detail-item">
+            <div class="detail-icon">👟</div>
+            <div>
+              <div class="detail-label">Format</div>
+              <div class="detail-text">Community 5K Run/Walk</div>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">❤️</div>
+            <div>
+              <div class="detail-label">Benefiting</div>
+              <div class="detail-text">Child abuse awareness and prevention</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MISSION SECTION -->
+    <div class="mission-section">
+      <div class="mission-eyebrow">Our Purpose</div>
+      <h2>Why We Step Up</h2>
+      <div class="mission-accent"></div>
+      <p>Every child deserves safety, support, and a voice. The Step Up Against Child Abuse 5K brings our community together to raise awareness and provide resources for children and families impacted by abuse.</p>
+      <p>When you register, you are not just signing up for a race. You are helping create protection, advocacy, and healing opportunities where they are needed most.</p>
+    </div>
+
+    <!-- DYNAMIC BLOCK – MARCH VERSION -->
+    <div class="dynamic-section">
+      <h2>Registration Now Open</h2>
+      <p>Registration is officially open, and we would love to see you there.</p>
+      <p>Whether you run, walk, or form a team with friends and family, your participation makes a real impact.</p>
+      <p>Secure your spot early and help us build momentum as we approach April 25.</p>
+      <a href="#" class="btn-primary">Reserve Your Spot</a>
+    </div>
+
+    <!-- SECONDARY CTA -->
+    <div class="secondary-section">
+      <p class="lead">Can't attend?</p>
+      <p class="sub">You can still support the mission. Every donation helps strengthen services that protect and empower children in our community.</p>
+      <div class="btn-group">
+        <a href="#" class="btn-outline">Donate Now</a>
+        <a href="#" class="btn-ghost">Share With A Friend</a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-logos">
+        <span class="footer-org">Mary Lee's House</span>
+        <span class="footer-divider-v"></span>
+        <span class="footer-org">Carter Injury Law</span>
+      </div>
+      <p>123 Main Street, Suite 100 &nbsp;·&nbsp; Anytown, ST 00000</p>
+      <p>(555) 000-0000</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">in</a>
+        <a href="#" title="Twitter">tw</a>
+      </div>
+      <p>Follow us on social media for event updates and community news.</p>
+      <div class="footer-links">
+        <a href="#">Unsubscribe</a>
+        <a href="#">Update Preferences</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
