@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Step Up Against Child Abuse 5K – April 25</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #eef0f4;
+        font-family: "DM Sans", Arial, sans-serif;
+        color: #1a1a2e;
+        -webkit-text-size-adjust: 100%;
+        line-height: 1;
+      }
+
+      /* ── Preheader ── */
+      .preheader {
+        display: none;
+        font-size: 1px;
+        color: transparent;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+      }
+
+      /* ── Wrapper ── */
+      .email-wrapper {
+        max-width: 600px;
+        margin: 36px auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow:
+          0 2px 8px rgba(0, 0, 0, 0.06),
+          0 12px 48px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ── Header ── */
+      .header {
+        background: #ffffff;
+        padding: 20px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        border-bottom: 1px solid #f0f2f6;
+      }
+      .org-logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+      }
+      .org-badge {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.3px;
+        flex-shrink: 0;
+      }
+      .badge-mlh {
+        background: #c0392b;
+      }
+      .badge-carter {
+        background: #1a3a6b;
+      }
+      .org-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: #2d2d2d;
+        line-height: 1.3;
+      }
+      .org-tagline {
+        font-size: 10px;
+        color: #9fa6b4;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+      }
+      .header-divider {
+        width: 1px;
+        height: 28px;
+        background: #e8eaf0;
+        flex-shrink: 0;
+      }
+
+      /* ── Hero ── */
+      .hero {
+        position: relative;
+        height: 380px;
+        overflow: hidden;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(15, 30, 60, 0.22) 0%,
+            rgba(15, 30, 60, 0.6) 55%,
+            rgba(10, 22, 48, 0.82) 100%
+          ),
+          /* Simulated daylight park scene with CSS */
+          radial-gradient(
+              ellipse at 50% 0%,
+              #87ceeb 0%,
+              #a8d8f0 30%,
+              transparent 60%
+            ),
+          radial-gradient(
+            ellipse at 20% 60%,
+            #5a8a3c 0%,
+            #4a7a30 40%,
+            transparent 65%
+          ),
+          radial-gradient(
+            ellipse at 80% 55%,
+            #6b9e44 0%,
+            #527a34 35%,
+            transparent 60%
+          ),
+          radial-gradient(ellipse at 50% 40%, #7aab4e 0%, transparent 70%),
+          linear-gradient(
+            180deg,
+            #87ceeb 0%,
+            #b8dff5 20%,
+            #8abe5e 45%,
+            #5a8a3c 100%
+          );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 40px 48px;
+        text-align: center;
+      }
+
+      /* Simulated runners silhouettes */
+      .hero::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 55%;
+        background:
+          radial-gradient(
+            ellipse at 30% 100%,
+            rgba(26, 58, 107, 0.15) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse at 70% 100%,
+            rgba(26, 58, 107, 0.15) 0%,
+            transparent 50%
+          );
+      }
+
+      /* Sun glow */
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 220px;
+        height: 220px;
+        background: radial-gradient(
+          circle,
+          rgba(255, 210, 100, 0.55) 0%,
+          rgba(255, 180, 50, 0.2) 45%,
+          transparent 70%
+        );
+        border-radius: 50%;
+      }
+
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        padding: 7px 16px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-tag::before {
+        content: "🎗️";
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 38px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.18;
+        margin-bottom: 14px;
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+        max-width: 480px;
+      }
+
+      .hero-meta {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.88);
+        font-weight: 400;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
+        letter-spacing: 0.2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        flex-wrap: wrap;
+      }
+      .hero-meta .dot {
+        margin: 0 10px;
+        opacity: 0.5;
+      }
+
+      .btn-hero {
+        display: inline-block;
+        background: #c0392b;
+        color: #ffffff !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 15px 36px;
+        border-radius: 50px;
+        position: relative;
+        z-index: 2;
+        letter-spacing: 0.3px;
+        box-shadow:
+          0 6px 28px rgba(192, 57, 43, 0.55),
+          0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s;
+      }
+      .btn-hero:hover {
+        background: #a93226;
+        transform: translateY(-1px);
+      }
+
+      /* ── Intro strip ── */
+      .intro-strip {
+        background: #f8f9fc;
+        border-bottom: 1px solid #eceef4;
+        padding: 22px 36px;
+        text-align: center;
+      }
+      .intro-strip p {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.65;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+      .intro-strip strong {
+        color: #1a3a6b;
+        font-weight: 600;
+      }
+
+      /* ── Details Grid ── */
+      .details-section {
+        background: #ffffff;
+        padding: 40px 36px 32px;
+      }
+
+      .section-eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #1a3a6b;
+        margin-bottom: 6px;
+      }
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 28px;
+        line-height: 1.2;
+      }
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .detail-card {
+        background: #f8f9fc;
+        border: 1px solid #eceef4;
+        border-radius: 10px;
+        padding: 18px 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        transition: box-shadow 0.2s;
+      }
+      .detail-card:hover {
+        box-shadow: 0 4px 20px rgba(26, 58, 107, 0.08);
+      }
+
+      .card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        flex-shrink: 0;
+        background: #eef2fa;
+      }
+
+      .card-label {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #9fa6b4;
+        margin-bottom: 4px;
+      }
+      .card-value {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1a1a2e;
+        line-height: 1.45;
+      }
+      .card-value small {
+        display: block;
+        font-size: 12px;
+        color: #6b7280;
+        font-weight: 400;
+        margin-top: 2px;
+      }
+
+      /* Donation match card — full width, special style */
+      .match-card {
+        grid-column: 1 / -1;
+        background: #fef4f3;
+        border: 1.5px solid #f5c5c0;
+        border-radius: 10px;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .match-card .card-icon {
+        background: #fddad7;
+      }
+      .match-label {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #c0392b;
+        margin-bottom: 4px;
+      }
+      .match-value {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1a1a2e;
+        line-height: 1.4;
+      }
+      .match-value span {
+        color: #c0392b;
+      }
+
+      /* ── Mission Section ── */
+      .mission-section {
+        background: #ffffff;
+        padding: 0 36px 44px;
+      }
+      .mission-divider {
+        height: 1px;
+        background: #eceef4;
+        margin-bottom: 40px;
+      }
+
+      .mission-section p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #4b5563;
+        margin-bottom: 16px;
+      }
+      .mission-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .pull-quote {
+        border-left: 3px solid #c0392b;
+        padding: 4px 0 4px 20px;
+        margin: 24px 0;
+      }
+      .pull-quote p {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 18px;
+        color: #1a1a2e;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      /* ── Register Block ── */
+      .register-section {
+        background: #1a3a6b;
+        padding: 48px 40px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .register-section::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 50%;
+      }
+      .register-section::after {
+        content: "";
+        position: absolute;
+        bottom: -80px;
+        left: -40px;
+        width: 240px;
+        height: 240px;
+        background: rgba(192, 57, 43, 0.12);
+        border-radius: 50%;
+      }
+
+      .register-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 14px;
+        position: relative;
+        z-index: 1;
+      }
+      .register-section p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.7;
+        max-width: 420px;
+        margin: 0 auto 10px;
+        position: relative;
+        z-index: 1;
+      }
+      .register-section p:last-of-type {
+        margin-bottom: 32px;
+      }
+
+      /* ── Secondary CTA ── */
+      .secondary-section {
+        background: #ffffff;
+        padding: 44px 40px;
+        text-align: center;
+        border-top: 1px solid #eceef4;
+      }
+      .secondary-section h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1a1a2e;
+        margin-bottom: 10px;
+      }
+      .secondary-section p {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.7;
+        max-width: 380px;
+        margin: 0 auto 28px;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-solid {
+        display: inline-block;
+        background: #c0392b;
+        color: #ffffff !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 13px 28px;
+        border-radius: 50px;
+        letter-spacing: 0.2px;
+        box-shadow: 0 4px 16px rgba(192, 57, 43, 0.35);
+      }
+
+      .btn-outline {
+        display: inline-block;
+        background: transparent;
+        color: #1a3a6b !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 50px;
+        border: 2px solid #1a3a6b;
+        letter-spacing: 0.2px;
+      }
+
+      /* ── Footer ── */
+      .footer {
+        background: #f8f9fc;
+        border-top: 1px solid #eceef4;
+        padding: 32px 36px;
+        text-align: center;
+      }
+
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eceef4;
+        flex-wrap: wrap;
+      }
+      .footer-org-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: #374151;
+      }
+      .footer-pipe {
+        color: #d1d5db;
+        font-size: 16px;
+      }
+
+      .footer-address {
+        font-size: 12px;
+        color: #9fa6b4;
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+
+      .footer-social {
+        margin-bottom: 20px;
+      }
+      .social-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #eef0f6;
+        border: 1px solid #dde0ec;
+        color: #6b7280 !important;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0 4px;
+        transition: background 0.2s;
+      }
+      .social-btn:hover {
+        background: #dde0ec;
+      }
+
+      .footer-links {
+        margin-top: 12px;
+      }
+      .footer-links a {
+        font-size: 11px;
+        color: #b0b8cc;
+        text-decoration: none;
+        margin: 0 10px;
+        letter-spacing: 0.4px;
+      }
+      .footer-links a:hover {
+        color: #c0392b;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 520px) {
+        .email-wrapper {
+          margin: 0;
+          border-radius: 0;
+        }
+        .header {
+          padding: 16px 20px;
+        }
+        .hero {
+          height: 320px;
+          padding: 0 24px 40px;
+        }
+        .hero h1 {
+          font-size: 28px;
+        }
+        .intro-strip,
+        .details-section,
+        .mission-section {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .cards-grid {
+          grid-template-columns: 1fr;
+        }
+        .match-card {
+          grid-column: 1;
+        }
+        .register-section,
+        .secondary-section,
+        .footer {
+          padding: 36px 20px;
+        }
+        .btn-group {
+          flex-direction: column;
+          align-items: center;
+        }
+        .btn-solid,
+        .btn-outline {
+          width: 100%;
+          max-width: 260px;
+          text-align: center;
+        }
+        .hero-meta {
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preheader">
+      Be part of something bigger on April 25 — join us at Gadsden Park in
+      Tampa.
+    </div>
+
+    <div class="email-wrapper">
+      <!-- ════ HEADER ════ -->
+      <div class="header">
+        <div class="org-logo">
+          <div class="org-badge badge-mlh">MLH</div>
+          <div>
+            <div class="org-name">Mary Lee's House</div>
+            <div class="org-tagline">Child Advocacy Center</div>
+          </div>
+        </div>
+        <div class="header-divider"></div>
+        <div class="org-logo">
+          <div class="org-badge badge-carter">CIL</div>
+          <div>
+            <div class="org-name">Carter Injury Law</div>
+            <div class="org-tagline">Presenting Sponsor</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════ HERO ════ -->
+      <div class="hero">
+        <div class="hero-tag">Child Abuse Prevention Month</div>
+        <h1>Step Up Against Child Abuse 5K</h1>
+        <div class="hero-meta">
+          Saturday, April 25
+          <span class="dot">·</span>
+          8:00 AM – 12:00 PM
+          <span class="dot">·</span>
+          Tampa, FL
+        </div>
+        <a href="#" class="btn-hero">Register Now →</a>
+      </div>
+
+      <!-- ════ INTRO STRIP ════ -->
+      <div class="intro-strip">
+        <p>
+          Join <strong>Mary Lee's House & Carter Injury Law</strong> for a
+          family-friendly 5K run and walk dedicated to raising awareness for
+          children and families impacted by abuse and neglect. Kids attend free.
+          Food, drinks, bouncy castles & face painting included.
+        </p>
+      </div>
+
+      <!-- ════ EVENT DETAILS ════ -->
+      <div class="details-section">
+        <div class="section-eyebrow">Event Details</div>
+        <div class="section-title">Everything You Need to Know</div>
+
+        <div class="cards-grid">
+          <div class="detail-card">
+            <div class="card-icon">📅</div>
+            <div>
+              <div class="card-label">Date</div>
+              <div class="card-value">Saturday, April 25</div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">⏰</div>
+            <div>
+              <div class="card-label">Time</div>
+              <div class="card-value">8:00 AM – 12:00 PM EDT</div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">📍</div>
+            <div>
+              <div class="card-label">Location</div>
+              <div class="card-value">
+                Gadsden Park
+                <small>6901 S MacDill Ave, Tampa, FL 33611</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">🅿️</div>
+            <div>
+              <div class="card-label">Parking</div>
+              <div class="card-value">Free On-Site Parking</div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">👟</div>
+            <div>
+              <div class="card-label">Routes</div>
+              <div class="card-value">
+                Two routes available
+                <small>Experienced runners + family-friendly walk</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">🧒</div>
+            <div>
+              <div class="card-label">Kids</div>
+              <div class="card-value">
+                Children attend free
+                <small>Bouncy castles & face painting</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">🍔</div>
+            <div>
+              <div class="card-label">Food & Drinks</div>
+              <div class="card-value">Provided at the event</div>
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <div class="card-icon">👨‍👩‍👧</div>
+            <div>
+              <div class="card-label">Ages</div>
+              <div class="card-value">All ages welcome</div>
+            </div>
+          </div>
+
+          <!-- Donation Match — Full Width -->
+          <div class="match-card">
+            <div class="card-icon">💰</div>
+            <div>
+              <div class="match-label">Donation Match</div>
+              <div class="match-value">
+                Carter Injury Law will match all donations
+                <span>up to $10,000</span> — doubling the impact of your
+                support.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════ MISSION ════ -->
+      <div class="mission-section">
+        <div class="mission-divider"></div>
+        <div class="section-eyebrow">Our Purpose</div>
+        <div class="section-title">Why We Step Up</div>
+
+        <p>
+          Carter Injury Law is proud to partner with Mary Lee's House in
+          recognition of Child Abuse Prevention Month this April. This
+          family-friendly event is dedicated to raising awareness and critical
+          funds to support children and families impacted by abuse and neglect.
+        </p>
+
+        <div class="pull-quote">
+          <p>
+            "Mary Lee's House works to provide a safe, respectful, and healing
+            environment for children during some of their most difficult
+            moments."
+          </p>
+        </div>
+
+        <p>
+          All proceeds benefit Mary Lee's House directly. When you register, you
+          are not just signing up for a race — you are helping create
+          protection, advocacy, and healing opportunities where they are needed
+          most.
+        </p>
+      </div>
+
+      <!-- ════ REGISTER BLOCK ════ -->
+      <div class="register-section">
+        <h2>Registration Is Now Open</h2>
+        <p>
+          We would love to see you there. Whether you run, walk, or form a team
+          with friends and family, your participation makes a real impact.
+        </p>
+        <p>
+          Secure your spot early and help us build momentum as we approach April
+          25.
+        </p>
+        <a href="#" class="btn-hero">Reserve Your Spot →</a>
+      </div>
+
+      <!-- ════ SECONDARY CTA ════ -->
+      <div class="secondary-section">
+        <h3>Can't Make It?</h3>
+        <p>
+          You can still support the mission. Every donation helps strengthen
+          services that protect and empower children in our community — and
+          remember, Carter Injury Law will match your gift.
+        </p>
+        <div class="btn-group">
+          <a href="#" class="btn-solid">Donate Now</a>
+          <a href="#" class="btn-outline">Share With A Friend</a>
+        </div>
+      </div>
+
+      <!-- ════ FOOTER ════ -->
+      <div class="footer">
+        <div class="footer-brand">
+          <span class="footer-org-name">Mary Lee's House</span>
+          <span class="footer-pipe">|</span>
+          <span class="footer-org-name">Carter Injury Law</span>
+        </div>
+        <div class="footer-address">
+          Gadsden Park · 6901 South MacDill Avenue, Tampa, FL 33611<br />
+          Presented by Mary Lee's House & Carter Injury Law
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram">ig</a>
+          <a href="#" class="social-btn" title="Twitter/X">𝕏</a>
+        </div>
+        <p style="font-size: 11px; color: #b0b8cc; margin-bottom: 10px">
+          Follow us on social media for event updates and community news.
+        </p>
+        <div class="footer-links">
+          <a href="#">Unsubscribe</a>
+          <a href="#">Update Preferences</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Step Up Against Child Abuse 5K – April 25</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fff;
+        font-family: "DM Sans", Arial, sans-serif;
+        color: #ffffff;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      .preheader {
+        display: none;
+        font-size: 1px;
+        color: transparent;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      /* ── WRAPPER ── */
+      .email-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #0d2244;
+        overflow: hidden;
+      }
+
+      /* ── HEADER ── */
+      .header {
+        background: #07101f;
+        padding: 18px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .header-org {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .org-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .dot-red {
+        background: #c0392b;
+      }
+      .dot-blue {
+        background: #4a7fbe;
+      }
+      .org-label {
+        font-size: 11px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.55);
+        letter-spacing: 0.5px;
+      }
+      .header-x {
+        color: rgba(255, 255, 255, 0.2);
+        font-size: 13px;
+        font-weight: 300;
+        padding: 0 12px;
+      }
+
+      /* ── HERO ── */
+      .hero {
+        background: linear-gradient(
+          160deg,
+          #07101f 0%,
+          #0d2244 35%,
+          #1a1035 65%,
+          #2a0a0a 85%,
+          #c0392b 100%
+        );
+        padding: 60px 44px 56px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Noise texture overlay */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(
+            ellipse at 15% 85%,
+            rgba(192, 57, 43, 0.28) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse at 85% 15%,
+            rgba(74, 127, 190, 0.18) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse at 50% 50%,
+            rgba(255, 255, 255, 0.02) 0%,
+            transparent 70%
+          );
+        pointer-events: none;
+      }
+
+      /* Glowing orb behind headline */
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 340px;
+        height: 200px;
+        background: radial-gradient(
+          ellipse,
+          rgba(192, 57, 43, 0.18) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .hero-month-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 28px;
+        position: relative;
+        z-index: 2;
+      }
+      .badge-line {
+        width: 28px;
+        height: 1px;
+        background: rgba(192, 57, 43, 0.7);
+      }
+      .badge-text {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #c0392b;
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 52px;
+        font-weight: 900;
+        font-style: italic;
+        color: #ffffff;
+        line-height: 1.08;
+        margin-bottom: 22px;
+        position: relative;
+        z-index: 2;
+        text-shadow:
+          0 0 60px rgba(192, 57, 43, 0.4),
+          0 4px 30px rgba(0, 0, 0, 0.5);
+        letter-spacing: -0.5px;
+      }
+      .hero h1 .accent {
+        color: #e8745a;
+        font-style: italic;
+      }
+
+      .hero-event-line {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+        position: relative;
+        z-index: 2;
+      }
+      .hero-event-line span {
+        color: rgba(255, 255, 255, 0.25);
+        margin: 0 10px;
+      }
+
+      .btn-glow {
+        display: inline-block;
+        background: #c0392b;
+        color: #ffffff !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 16px 44px;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow:
+          0 0 0 1px rgba(192, 57, 43, 0.6),
+          0 0 30px rgba(192, 57, 43, 0.5),
+          0 0 80px rgba(192, 57, 43, 0.25),
+          0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      /* ── STAT SECTION ── */
+      .stat-section {
+        background: #07101f;
+        padding: 0;
+        position: relative;
+      }
+
+      /* Diagonal top edge */
+      .diagonal-top {
+        width: 100%;
+        height: 48px;
+        background: #0d2244;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+      }
+      .diagonal-bottom {
+        width: 100%;
+        height: 48px;
+        background: #0d2244;
+        clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .stat-inner {
+        background: #07101f;
+        padding: 20px 44px 28px;
+        text-align: center;
+        border-top: 1px solid rgba(192, 57, 43, 0.25);
+        border-bottom: 1px solid rgba(192, 57, 43, 0.25);
+      }
+
+      .stat-eyebrow {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 20px;
+      }
+
+      .stat-number {
+        font-family: "Playfair Display", serif;
+        font-size: 72px;
+        font-weight: 900;
+        color: #c0392b;
+        line-height: 1;
+        margin-bottom: 6px;
+        text-shadow: 0 0 40px rgba(192, 57, 43, 0.4);
+      }
+      .stat-label {
+        font-size: 18px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.85);
+        line-height: 1.5;
+        max-width: 380px;
+        margin: 0 auto 24px;
+        letter-spacing: 0.2px;
+      }
+      .stat-label strong {
+        color: #ffffff;
+        font-weight: 600;
+      }
+      .stat-source {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.25);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* ── COUNTDOWN BLOCK ── */
+      .countdown-section {
+        background: #0d2244;
+        padding: 36px 44px;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .countdown-label {
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 0.35);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .countdown-grid {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+      .countdown-unit {
+        text-align: center;
+        flex: 1;
+        max-width: 110px;
+      }
+      .countdown-box {
+        background: #07101f;
+        border: 1px solid rgba(192, 57, 43, 0.3);
+        border-radius: 6px;
+        padding: 18px 12px 14px;
+        margin-bottom: 8px;
+        position: relative;
+        overflow: hidden;
+      }
+      .countdown-box::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .countdown-box::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(192, 57, 43, 0.06) 0%,
+          transparent 50%
+        );
+      }
+      .countdown-num {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1;
+        position: relative;
+        z-index: 1;
+      }
+      .countdown-sep {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 900;
+        color: rgba(192, 57, 43, 0.5);
+        display: flex;
+        align-items: center;
+        padding-bottom: 22px;
+        flex-shrink: 0;
+      }
+      .countdown-unit-label {
+        font-size: 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .countdown-note {
+        text-align: center;
+        margin-top: 16px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.3);
+        letter-spacing: 0.5px;
+      }
+
+      /* ── WHY WE STEP ── */
+      .why-section {
+        background: #0d2244;
+        padding: 48px 44px;
+        position: relative;
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .why-section::before {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -80px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(
+          circle,
+          rgba(192, 57, 43, 0.08) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .why-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .eyebrow-bar {
+        width: 32px;
+        height: 2px;
+        background: #c0392b;
+      }
+      .eyebrow-text {
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #c0392b;
+      }
+
+      .why-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 34px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.15;
+        margin-bottom: 28px;
+      }
+
+      .why-story {
+        font-size: 15px;
+        line-height: 1.85;
+        color: rgba(255, 255, 255, 0.68);
+        margin-bottom: 16px;
+      }
+      .why-story strong {
+        color: rgba(255, 255, 255, 0.92);
+        font-weight: 600;
+      }
+
+      /* Pullquote */
+      .pullquote {
+        margin: 28px 0;
+        padding: 24px 28px;
+        border-left: 3px solid #c0392b;
+        background: rgba(192, 57, 43, 0.07);
+        border-radius: 0 6px 6px 0;
+      }
+      .pullquote p {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 1.55;
+        opacity: 0.92;
+      }
+
+      /* ── WHAT YOU GET ── */
+      .perks-section {
+        background: #07101f;
+        padding: 44px 44px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .perks-eyebrow {
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 24px;
+      }
+
+      .perks-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+      }
+
+      .perk-item {
+        padding: 20px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .perk-item:nth-child(odd) {
+        background: rgba(255, 255, 255, 0.015);
+      }
+
+      .perk-icon {
+        font-size: 22px;
+        flex-shrink: 0;
+        margin-top: 1px;
+        line-height: 1;
+      }
+      .perk-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 3px;
+      }
+      .perk-desc {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.5;
+      }
+
+      /* ── MATCH BANNER ── */
+      .match-banner {
+        background: #c0392b;
+        padding: 28px 44px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+      .match-banner::before {
+        content: "";
+        position: absolute;
+        right: -40px;
+        top: -40px;
+        width: 180px;
+        height: 180px;
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 50%;
+      }
+      .match-banner::after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: -60px;
+        width: 160px;
+        height: 160px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 50%;
+      }
+      .match-icon {
+        font-size: 36px;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+      }
+      .match-copy {
+        position: relative;
+        z-index: 1;
+      }
+      .match-headline {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: 6px;
+      }
+      .match-sub {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.5;
+      }
+      .match-badge {
+        margin-left: auto;
+        flex-shrink: 0;
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 4px;
+        padding: 10px 16px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      .match-badge-num {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1;
+      }
+      .match-badge-label {
+        font-size: 9px;
+        color: rgba(255, 255, 255, 0.6);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 3px;
+      }
+
+      /* ── REGISTER CTA ── */
+      .register-section {
+        background: linear-gradient(180deg, #0d2244 0%, #07101f 100%);
+        padding: 56px 44px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .register-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 14px;
+        line-height: 1.2;
+      }
+      .register-section p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.55);
+        line-height: 1.75;
+        max-width: 400px;
+        margin: 0 auto 32px;
+      }
+
+      .btn-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .btn-primary-lg {
+        display: inline-block;
+        background: #c0392b;
+        color: #ffffff !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 17px 52px;
+        border-radius: 4px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        box-shadow:
+          0 0 40px rgba(192, 57, 43, 0.4),
+          0 4px 20px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+      }
+
+      .btn-ghost-lg {
+        display: inline-block;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.55) !important;
+        font-family: "DM Sans", Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 14px 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        letter-spacing: 0.5px;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+      }
+
+      .register-divider {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .register-divider span {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.2);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .register-divider-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      /* ── FOOTER ── */
+      .footer {
+        background: #07101f;
+        padding: 32px 44px;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        text-align: center;
+      }
+
+      .footer-partners {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        flex-wrap: wrap;
+      }
+      .partner-pill {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 6px 14px 6px 8px;
+      }
+      .partner-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .partner-name {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 500;
+      }
+
+      .footer-address {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.25);
+        line-height: 1.8;
+        margin-bottom: 18px;
+      }
+      .footer-social {
+        margin-bottom: 18px;
+      }
+      .footer-social a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        color: rgba(255, 255, 255, 0.4) !important;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 600;
+        margin: 0 3px;
+      }
+      .footer-links a {
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+        margin: 0 8px;
+        letter-spacing: 0.5px;
+      }
+      .footer-links a:hover {
+        color: #c0392b;
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 520px) {
+        .email-wrapper {
+          margin: 0;
+        }
+        .hero {
+          padding: 48px 24px 44px;
+        }
+        .hero h1 {
+          font-size: 36px;
+        }
+        .stat-inner {
+          padding: 20px 24px 28px;
+        }
+        .stat-number {
+          font-size: 56px;
+        }
+        .countdown-section {
+          padding: 32px 24px;
+        }
+        .countdown-num {
+          font-size: 28px;
+        }
+        .why-section,
+        .perks-section,
+        .register-section,
+        .footer {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+        .why-section h2 {
+          font-size: 26px;
+        }
+        .perks-grid {
+          grid-template-columns: 1fr;
+        }
+        .match-banner {
+          flex-direction: column;
+          padding: 28px 24px;
+          text-align: center;
+        }
+        .match-badge {
+          margin: 0 auto;
+        }
+        .countdown-grid {
+          gap: 8px;
+        }
+        .header {
+          padding: 16px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preheader">
+      April 25 · Gadsden Park · Tampa — Register now and double your impact.
+    </div>
+
+    <div class="email-wrapper">
+      <!-- ════ HEADER ════ -->
+      <div class="header">
+        <div class="header-org">
+          <div class="org-dot dot-red"></div>
+          <span class="org-label">Mary Lee's House</span>
+        </div>
+        <div class="header-x">×</div>
+        <div class="header-org">
+          <div class="org-dot dot-blue"></div>
+          <span class="org-label">Carter Injury Law</span>
+        </div>
+      </div>
+
+      <!-- ════ HERO ════ -->
+      <div class="hero">
+        <div class="hero-month-badge">
+          <div class="badge-line"></div>
+          <div class="badge-text">Child Abuse Prevention Month</div>
+          <div class="badge-line"></div>
+        </div>
+
+        <h1>"Every Step<br /><span class="accent">Protects a Child.</span>"</h1>
+
+        <div class="hero-event-line">
+          April 25
+          <span>·</span>
+          Gadsden Park
+          <span>·</span>
+          Tampa, FL
+        </div>
+
+        <a href="#" class="btn-glow">Register Now</a>
+      </div>
+
+      <!-- ════ STAT SECTION ════ -->
+      <div class="stat-section">
+        <div class="diagonal-top"></div>
+        <div class="stat-inner">
+          <div class="stat-eyebrow">Why This Matters</div>
+          <div class="stat-number">1 in 7</div>
+          <div class="stat-label">
+            <strong>children in the U.S.</strong> will experience abuse or
+            neglect before they turn 18.
+          </div>
+          <div class="stat-source">
+            Source: Centers for Disease Control &amp; Prevention
+          </div>
+        </div>
+        <div class="diagonal-bottom"></div>
+      </div>
+
+      <!-- ════ COUNTDOWN ════ -->
+      <div class="countdown-section">
+        <div class="countdown-label">Event Begins In</div>
+        <div class="countdown-grid">
+          <div class="countdown-unit">
+            <div class="countdown-box">
+              <div class="countdown-num">59</div>
+            </div>
+            <div class="countdown-unit-label">Days</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-box">
+              <div class="countdown-num">14</div>
+            </div>
+            <div class="countdown-unit-label">Hours</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-box">
+              <div class="countdown-num">32</div>
+            </div>
+            <div class="countdown-unit-label">Minutes</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-unit">
+            <div class="countdown-box">
+              <div class="countdown-num">08</div>
+            </div>
+            <div class="countdown-unit-label">Seconds</div>
+          </div>
+        </div>
+        <div class="countdown-note">
+          ⚠️ Update countdown values before sending
+        </div>
+      </div>
+
+      <!-- ════ WHY WE STEP ════ -->
+      <div class="why-section">
+        <div class="why-eyebrow">
+          <div class="eyebrow-bar"></div>
+          <div class="eyebrow-text">Why We Step</div>
+        </div>
+        <h2>Because Every<br />Child Deserves Safety.</h2>
+
+        <p class="why-story">
+          Carter Injury Law is proud to partner with
+          <strong>Mary Lee's House</strong> for Step Up Against Child Abuse in
+          recognition of Child Abuse Prevention Month this April. This isn't
+          just a race. It's a statement.
+        </p>
+
+        <div class="pullquote">
+          <p>
+            "Mary Lee's House provides a safe, respectful, and healing
+            environment for children during some of their most difficult moments
+            — and they need our community behind them."
+          </p>
+        </div>
+
+        <p class="why-story">
+          Every dollar raised goes directly to providing advocacy, support, and
+          healing resources for children and families impacted by abuse and
+          neglect. <strong>Your registration is an act of solidarity.</strong>
+        </p>
+      </div>
+
+      <!-- ════ PERKS GRID ════ -->
+      <div class="perks-section">
+        <div class="perks-eyebrow">What to Expect on April 25</div>
+        <div class="perks-grid">
+          <div class="perk-item">
+            <div class="perk-icon">👟</div>
+            <div>
+              <div class="perk-name">Two Routes</div>
+              <div class="perk-desc">
+                Experienced runners + family-friendly walk
+              </div>
+            </div>
+          </div>
+          <div class="perk-item">
+            <div class="perk-icon">🧒</div>
+            <div>
+              <div class="perk-name">Kids Attend Free</div>
+              <div class="perk-desc">Bouncy castles & face painting</div>
+            </div>
+          </div>
+          <div class="perk-item">
+            <div class="perk-icon">🍔</div>
+            <div>
+              <div class="perk-name">Food & Drinks</div>
+              <div class="perk-desc">Provided at the event</div>
+            </div>
+          </div>
+          <div class="perk-item">
+            <div class="perk-icon">🅿️</div>
+            <div>
+              <div class="perk-name">Free Parking</div>
+              <div class="perk-desc">On-site at Gadsden Park</div>
+            </div>
+          </div>
+          <div class="perk-item">
+            <div class="perk-icon">📍</div>
+            <div>
+              <div class="perk-name">Gadsden Park</div>
+              <div class="perk-desc">6901 S MacDill Ave, Tampa FL</div>
+            </div>
+          </div>
+          <div class="perk-item">
+            <div class="perk-icon">⏰</div>
+            <div>
+              <div class="perk-name">8 AM – 12 PM</div>
+              <div class="perk-desc">Saturday, April 25 EDT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════ MATCH BANNER ════ -->
+      <div class="match-banner">
+        <div class="match-icon">💰</div>
+        <div class="match-copy">
+          <div class="match-headline">All Donations Matched</div>
+          <div class="match-sub">
+            Carter Injury Law will match every dollar donated, up to $10,000.
+            Double the impact. Double the protection.
+          </div>
+        </div>
+        <div class="match-badge">
+          <div class="match-badge-num">$10K</div>
+          <div class="match-badge-label">Match Cap</div>
+        </div>
+      </div>
+
+      <!-- ════ REGISTER CTA ════ -->
+      <div class="register-section">
+        <h2>Spots Are Filling Fast.<br />Register Today.</h2>
+        <p>
+          Secure your place at Gadsden Park on April 25. Every step you take is
+          a step toward a safer childhood for kids in your community.
+        </p>
+        <div class="btn-stack">
+          <a href="#" class="btn-primary-lg">Register Now</a>
+          <div class="register-divider">
+            <div class="register-divider-line"></div>
+            <span>or</span>
+            <div class="register-divider-line"></div>
+          </div>
+          <a href="#" class="btn-ghost-lg">Donate Without Attending</a>
+        </div>
+      </div>
+
+      <!-- ════ FOOTER ════ -->
+      <div class="footer">
+        <div class="footer-partners">
+          <div class="partner-pill">
+            <div class="partner-dot" style="background: #c0392b"></div>
+            <span class="partner-name">Mary Lee's House</span>
+          </div>
+          <div class="partner-pill">
+            <div class="partner-dot" style="background: #4a7fbe"></div>
+            <span class="partner-name">Carter Injury Law</span>
+          </div>
+        </div>
+        <div class="footer-address">
+          Gadsden Park · 6901 South MacDill Avenue, Tampa, FL 33611<br />
+          Presented by Mary Lee's House &amp; Carter Injury Law
+        </div>
+        <div class="footer-social">
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">ig</a>
+          <a href="#" title="X">𝕏</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Unsubscribe</a>
+          <a href="#">Update Preferences</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
