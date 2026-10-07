@@ -1,2222 +1,424 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Carter Email Template</title>
-    <style>
-      /* Reset styles */
-      body,
-      table,
-      td,
-      a {
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
-      table,
-      td {
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-      }
-      img {
-        -ms-interpolation-mode: bicubic;
-      }
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
 
-      body {
-        margin: 0;
-        padding: 0;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>September Newsletter - Carter Injury Law</title>
+
+  <!-- Google Fonts Fallbacks -->
+  <!--[if !mso]><!-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Caveat:wght@600;700&family=Patrick+Hand&family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <!--<![endif]-->
+
+  <style>
+    /* Global Resets */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      background-color: #cfcfcf;
+    }
+
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      box-sizing: border-box;
+    }
+
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Mobile Responsive Rules */
+    @media screen and (max-width: 600px) {
+      .email-container {
         width: 100% !important;
-        height: 100% !important;
-        background-color: #f6f9fc;
-        font-family: "Inter", Helvetica, Arial, sans-serif;
-      }
-      table {
-        border-collapse: collapse !important;
+        max-width: 100% !important;
       }
 
-      /* Responsive styles */
-      @media screen and (max-width: 650px) {
-        .email-container {
-          width: 100% !important;
-          max-width: 100% !important;
-          height: auto !important;
-        }
-        .fluid {
-          width: 100% !important;
-          height: auto !important;
-        }
-        .stack-column {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          margin-bottom: 20px !important;
-        }
-        .stack-spacer {
-          display: none !important;
-        }
-        .footer-col {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          text-align: center !important;
-          padding: 5px 0 !important;
-        }
+      .stack-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
       }
-    </style>
-    <!--[if !mso]><!-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--<![endif]-->
-  </head>
-  <body style="margin: 0; padding: 0; background-color: #f6f9fc">
-    <center style="width: 100%; background-color: #f6f9fc; padding: 40px 0">
-      <!-- Global Background Gradient (No ghosting/double-text) -->
-      <table
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-        width="650"
-        class="email-container"
-        style="
-          margin: 0 auto;
-          background-color: #02b2e2;
-          background: linear-gradient(90deg, #02b2e2 0%, #ffd83b 100%);
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        "
-      >
-        <!-- Section 1: Logo Header -->
-        <tr>
-          <td align="center" style="padding: 40px 20px 25px 20px">
-            <a href="#" target="_blank" style="text-decoration: none">
-              <img
-                src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/image%20227.png"
-                alt="Carter Injury Law Logo"
-                width="280"
-                style="display: block; border: 0; max-width: 100%; height: auto"
-              />
-            </a>
-          </td>
-        </tr>
 
-        <!-- Section 2: Hero Banner -->
-        <tr>
-          <td align="center" style="padding: 0 30px 0 30px">
-            <a href="#" target="_blank" style="text-decoration: none">
-              <img
-                src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/image%20236.png"
-                alt="The Carter Courier"
-                width="490"
-                class="fluid"
-                style="
-                  display: block;
-                  border: 0;
-                  width: 100%;
-                  max-width: 490px;
-                  height: auto;
-                  border-radius: 12px 12px 0 0;
-                "
-              />
-            </a>
-          </td>
-        </tr>
+      .stack-spacer {
+        display: none !important;
+      }
 
-        <!-- Section 3: Teal Card (Carter News) -->
-        <tr>
-          <td align="center" style="padding: 0 30px 20px 30px">
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="
-                background-color: #0090a8;
-                border-radius: 20px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-              "
-            >
-              <tr>
-                <td align="center" style="padding: 35px 25px">
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        align="center"
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 28px;
-                          font-weight: bold;
-                          padding-bottom: 15px;
-                        "
-                      >
-                        Carter News
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        align="center"
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 15px;
-                          line-height: 24px;
-                          letter-spacing: 0.2px;
-                        "
-                      >
-                        At Carter Injury Law, we're here to keep you informed
-                        and empowered. Our newsletter shares firm updates, legal
-                        tips, attorney spotlights, Recipe of the month, Cocktail
-                        of the month and Tampa Bay community news—everything you
-                        need to stay connected and confident as you navigate
-                        Florida's personal injury laws.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+      .mobile-padding {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
 
-        <!-- Section 4: News Highlights Title -->
-        <tr>
-          <td
-            align="center"
-            style="
-              padding: 25px 30px 20px 30px;
-              color: #ffffff;
-              font-family:
-                &quot;Kefir Demibold&quot;, &quot;Kefir-DemiBold&quot;,
-                &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;, Georgia, serif;
-              font-size: 24px;
-              font-weight: bold;
-              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-            "
-          >
-            Florida & National News Highlights | August 2026
-          </td>
-        </tr>
+      .september-title {
+        font-size: 58px !important;
+      }
 
-        <!-- Section 5: Grid Row 1 -->
-        <tr>
-          <td align="center" style="padding: 0 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <!-- Column 1 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Back-to-School Season Begins
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Students across Florida are heading back to the
-                        classroom this month. Drivers are reminded to slow down
-                        in school zones, watch for children at bus stops, and
-                        remain alert during morning and afternoon commute times.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+      .spotlight-title {
+        font-size: 30px !important;
+      }
+    }
+  </style>
+</head>
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="25"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+<body
+  style="margin: 0; padding: 0; background-color: #cfcfcf; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">
 
-                <!-- Column 2 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Peak Hurricane Season Approaches
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        August marks the beginning of the most active part of
-                        the Atlantic hurricane season. Florida residents are
-                        encouraged to review emergency plans, check insurance
-                        coverage, replenish disaster supply kits, and monitor
-                        forecasts from trusted weather sources.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+  <!-- Outer Body Container -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #cfcfcf;">
+    <tr>
+      <td align="center" style="padding: 20px 0 40px 0;">
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="25"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+        <!-- MAIN CONTAINER -->
+        <table border="0" cellpadding="0" cellspacing="0" width="600" class="email-container"
+          style="width: 600px; max-width: 600px; margin: 0 auto; background-color: #1a1a1a; background-image: url('https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/Autumn%20Pumpkins%20on%20Wooden%20Planks.png'); background-repeat: no-repeat; background-position: top center; background-size: 100% 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
 
-                <!-- Column 3 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Heat and Water Safety
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Summer temperatures remain high across the Sunshine
-                        State. Staying hydrated, wearing sunscreen, and
-                        practicing water safety at beaches and pools are
-                        essential for enjoying the remainder of the season
-                        safely.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+          <!-- 1. TOP HEADER TITLE: September -->
+          <tr>
+            <td align="center" style="padding: 30px 10px 15px 10px;">
+              <h1 class="september-title"
+                style="margin: 0; font-family: 'Alex Brush', 'Dancing Script', cursive; font-size: 78px; color: #ffffff; font-weight: 400; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); letter-spacing: 1px;">
+                September
+              </h1>
+            </td>
+          </tr>
 
-        <!-- Section 6: Grid Row 2 -->
-        <tr>
-          <td align="center" style="padding: 0 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <!-- Column 1 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        National Preparedness Month Is Around the Corner
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        As communities prepare for National Preparedness Month
-                        in September, emergency management officials encourage
-                        families to create emergency communication plans, update
-                        contact information, and assemble emergency supply kits.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+          <!-- 2. MAIN INTRO CARD -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 0 24px 24px 24px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                style="background-color: #9ab8cf; border-radius: 28px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+                <tr>
+                  <td
+                    style="padding: 28px 24px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 14.5px; font-weight: bold; line-height: 1.55; color: #000000; text-align: left;">
+                    <p style="margin: 0 0 14px 0;">
+                      As the school year gets underway, families settle into new routines, and roads become busier with
+                      school buses, parents, students, and pedestrians. At Carter Injury Law, we encourage everyone to
+                      slow down, stay alert, and give yourself extra time when traveling through school zones. Watch
+                      carefully for children crossing the road, follow school bus laws, and remember that a few extra
+                      seconds of caution can help prevent an accident.
+                    </p>
+                    <p style="margin: 0;">
+                      We wish you and your family a safe and successful school year. Stay alert, be patient, and make
+                      safety a priority as we move into the busy fall season.
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="25"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+          <!-- 3. BITE AND SIP SPOTLIGHT PAPER BACKGROUND SECTION -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 5px 24px 20px 24px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center"
+                    background="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/paper.png"
+                    style="background-image: url('https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/paper.png'); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; padding: 28px 20px 30px 20px;">
+                    <h2 class="spotlight-title"
+                      style="margin: 0; font-family: 'Patrick Hand', 'Caveat', cursive; font-size: 38px; color: #000000; font-weight: 700; letter-spacing: 0.5px;">
+                      Bite and Sip Spotlight
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                <!-- Column 2 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        AI Continues to Transform Everyday Business
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Artificial intelligence continues to reshape industries
-                        across the country, helping businesses improve customer
-                        service, automate routine tasks, and enhance
-                        productivity while emphasizing responsible use and data
-                        security.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+          <!-- 3-COLUMN SPOTLIGHT CARDS -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 0 24px 24px 24px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="25"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+                  <!-- COLUMN 1: Mise en Place -->
+                  <td class="stack-column" valign="top" width="170">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 8px;">
+                      <tr>
+                        <td align="center"
+                          style="background-color: #ffffff; padding: 4px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                          <img src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/food1.png"
+                            width="162" alt="Mise en Place"
+                            style="display: block; width: 100%; height: 110px; object-fit: cover; border-radius: 6px;" />
+                        </td>
+                      </tr>
+                    </table>
 
-                <!-- Column 3 -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="180"
-                  style="
-                    background-color: #0090a8;
-                    border-radius: 15px;
-                    padding: 20px 15px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-bottom: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Online Security Reminder
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 11px;
-                          line-height: 16px;
-                          padding-top: 10px;
-                          text-align: left;
-                        "
-                      >
-                        Cybersecurity experts continue to advise consumers to
-                        stay alert for phishing emails, fraudulent text
-                        messages, and online scams. Using strong passwords,
-                        enabling multi-factor authentication, and verifying
-                        unexpected requests can help protect personal
-                        information.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                      style="background-color: #9ab8cf; border-radius: 18px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
+                      <tr>
+                        <td
+                          style="padding: 14px 11px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 11px; font-weight: bold; line-height: 1.45; color: #000000; text-align: left;">
+                          <p style="margin: 0 0 6px 0; text-align: center;">
+                            <u style="font-weight: 700; font-size: 12px; color: #000000;">Mise en Place</u>
+                          </p>
+                          <p style="margin: 0;">
+                            Mise en Place is a Tampa favorite offering upscale New American cuisine with creative,
+                            seasonal dishes. Known for thoughtful combinations like roasted butternut squash with blue
+                            cheese, pickled apples, pancetta, pistachios, and fried sage, the menu highlights fresh
+                            flavors with an autumn-inspired twist. Featuring a sophisticated atmosphere and innovative
+                            menu, this is a great spot for a special dinner or date night.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
 
-        <!-- Section 7: Full Width Card -->
-        <tr>
-          <td align="center" style="padding: 0 30px 30px 30px">
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="
-                background-color: #0090a8;
-                border-radius: 20px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-              "
-            >
-              <tr>
-                <td align="left" style="padding: 25px 25px">
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 20px;
-                          font-weight: bold;
-                          padding-bottom: 10px;
-                        "
-                      >
-                        Community Reminder
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        height="1"
-                        style="
-                          background-color: #ffffff;
-                          font-size: 0;
-                          line-height: 0;
-                          padding: 0;
-                          opacity: 0.4;
-                        "
-                      >
-                        <!-- Divider line -->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-top: 10px;
-                          letter-spacing: 0.2px;
-                        "
-                      >
-                        As summer winds down and routines begin to change,
-                        August is an excellent time to focus on preparedness,
-                        safe travel, and healthy habits. Taking a few simple
-                        precautions today can help ensure a safer and more
-                        productive season for you and your family.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <!-- Section 8: Tampa Bay Area Local Events Title -->
-        <tr>
-          <td
-            align="center"
-            style="
-              padding: 20px 30px 15px 30px;
-              color: #111111;
-              font-family:
-                &quot;Kefir Demibold&quot;, &quot;Kefir-DemiBold&quot;,
-                &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;, Georgia, serif;
-              font-size: 24px;
-              font-weight: bold;
-            "
-          >
-            🎉 Tampa Bay Area Local Events | August 2026
-          </td>
-        </tr>
+                  <!-- SPACER 1 -->
+                  <td class="stack-spacer" width="21" style="font-size: 0; line-height: 0;">&nbsp;</td>
 
-        <!-- Section 9: Events List -->
-        <tr>
-          <td align="left" style="padding: 0 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <!-- Event 1 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-bottom: 5px;
-                  "
-                >
-                  🎭 METROCON 2026
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #b11108;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: bold;
-                    padding-bottom: 10px;
-                  "
-                >
-                  📅 July 31 – August 2 | 📍 Tampa Convention Center
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  Florida's largest anime and gaming convention returns to
-                  downtown Tampa with cosplay competitions, celebrity guests,
-                  gaming tournaments, artist exhibits, unique vendors, live
-                  entertainment, and the fan-favorite Anime Human Chess Match.
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-                    font-size: 0;
-                    line-height: 0;
-                  "
-                >
-                  &nbsp;
-                </td>
-              </tr>
+                  <!-- COLUMN 2: Dirty Laundry Speakeasy -->
+                  <td class="stack-column" valign="top" width="170">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 8px;">
+                      <tr>
+                        <td align="center"
+                          style="background-color: #ffffff; padding: 4px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                          <img src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/food2.png"
+                            width="162" alt="Dirty Laundry Speakeasy"
+                            style="display: block; width: 100%; height: 110px; object-fit: cover; border-radius: 6px;" />
+                        </td>
+                      </tr>
+                    </table>
 
-              <!-- Event 2 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 5px;
-                  "
-                >
-                  🤝 National Funeral Directors & Morticians Association
-                  Convention
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #b11108;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: bold;
-                    padding-bottom: 10px;
-                  "
-                >
-                  📅 August 4–5 | 📍 Tampa Convention Center
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  Professionals from across the country gather in Tampa for
-                  educational sessions, networking opportunities, keynote
-                  speakers, and industry exhibitions during this annual national
-                  convention.
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-                    font-size: 0;
-                    line-height: 0;
-                  "
-                >
-                  &nbsp;
-                </td>
-              </tr>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                      style="background-color: #9ab8cf; border-radius: 18px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
+                      <tr>
+                        <td
+                          style="padding: 14px 11px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 11px; font-weight: bold; line-height: 1.45; color: #000000; text-align: left;">
+                          <p style="margin: 0 0 6px 0; text-align: center;">
+                            <u style="font-weight: 700; font-size: 12px; color: #000000;">Dirty Laundry Speakeasy</u>
+                          </p>
+                          <p style="margin: 0;">
+                            Dirty Laundry Speakeasy is a hidden St. Petersburg speakeasy that went viral on TikTok for
+                            its secret entrance, vintage-inspired atmosphere, and unique experience. Tucked behind a
+                            laundromat-style storefront, this popular spot serves creative craft cocktails alongside
+                            small bites and live entertainment.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
 
-              <!-- Event 3 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 5px;
-                  "
-                >
-                  🌊 Riverwalk Summer Events
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #b11108;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: bold;
-                    padding-bottom: 10px;
-                  "
-                >
-                  📅 Throughout August | 📍 Tampa Riverwalk
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  The Tampa Riverwalk hosts Yoga in the Park, Sunset Paddle
-                  Happy Hour, Art on the House, Gallery Chats, live music, and
-                  the popular Rock the Bay Dinner Dance Party throughout the
-                  month.
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-                    font-size: 0;
-                    line-height: 0;
-                  "
-                >
-                  &nbsp;
-                </td>
-              </tr>
+                  <!-- SPACER 2 -->
+                  <td class="stack-spacer" width="21" style="font-size: 0; line-height: 0;">&nbsp;</td>
 
-              <!-- Event 4 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 5px;
-                  "
-                >
-                  🏛️ Connect Marketplace 2026
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #b11108;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    font-weight: bold;
-                    padding-bottom: 10px;
-                  "
-                >
-                  📅 August 23–27 | 📍 Tampa Convention Center
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  One of the nation's premier meetings and events industry
-                  conferences brings thousands of professionals to Tampa Bay for
-                  networking, educational sessions, business opportunities, and
-                  industry collaboration.
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-                    font-size: 0;
-                    line-height: 0;
-                  "
-                >
-                  &nbsp;
-                </td>
-              </tr>
+                  <!-- COLUMN 3: Kahwa Coffee -->
+                  <td class="stack-column" valign="top" width="170">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 8px;">
+                      <tr>
+                        <td align="center"
+                          style="background-color: #ffffff; padding: 4px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+                          <img src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/food3.png"
+                            width="162" alt="Kahwa Coffee"
+                            style="display: block; width: 100%; height: 110px; object-fit: cover; border-radius: 6px;" />
+                        </td>
+                      </tr>
+                    </table>
 
-              <!-- Event 5 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 5px;
-                  "
-                >
-                  ⚾ Tampa Bay Rays Home Games
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  Baseball season continues throughout August as the Tampa Bay
-                  Rays host exciting home matchups. Fans can enjoy promotional
-                  nights, family-friendly entertainment, and Major League
-                  Baseball action before the regular season enters its final
-                  stretch.
-                </td>
-              </tr>
-              <tr>
-                <td
-                  style="
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-                    font-size: 0;
-                    line-height: 0;
-                  "
-                >
-                  &nbsp;
-                </td>
-              </tr>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                      style="background-color: #9ab8cf; border-radius: 18px; box-shadow: 0 3px 10px rgba(0,0,0,0.12);">
+                      <tr>
+                        <td
+                          style="padding: 14px 11px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 11px; font-weight: bold; line-height: 1.45; color: #000000; text-align: left;">
+                          <p style="margin: 0 0 6px 0; text-align: center;">
+                            <u style="font-weight: 700; font-size: 12px; color: #000000;">Kahwa Coffee</u>
+                          </p>
+                          <p style="margin: 0;">
+                            Kahwa Coffee is a Tampa favorite known for locally roasted coffee, creative drinks, and
+                            seasonal flavors. This fall, coffee lovers can enjoy the return of its Pumpkin Spice Latte,
+                            made with espresso, cinnamon, nutmeg, ginger, and creamy milk. Whether you prefer it hot or
+                            iced, Kahwa's seasonal menu is a perfect way to welcome the flavors of fall while enjoying a
+                            locally loved Tampa coffee shop.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
 
-              <!-- Event 6 -->
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #111111;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 15px;
-                    font-weight: bold;
-                    padding-top: 15px;
-                    padding-bottom: 10px;
-                  "
-                >
-                  ☀️ Explore Tampa Bay This Summer
-                </td>
-              </tr>
-              <tr>
-                <td
-                  align="left"
-                  style="
-                    color: #333333;
-                    font-family:
-                      &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                    font-size: 13px;
-                    line-height: 18px;
-                  "
-                >
-                  August is a great time to explore Tampa Bay's award-winning
-                  beaches, waterfront parks, museums, local restaurants, and
-                  outdoor attractions before the busy fall season begins.
-                  Whether you're looking for live entertainment, family fun, or
-                  relaxing coastal views, there's no shortage of ways to enjoy
-                  the Sunshine State.
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-        <!-- Section 10: Blog Cards (2 columns) -->
-        <tr>
-          <td align="center" style="padding: 10px 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <!-- Left Card -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="285"
-                  style="
-                    background-color: #ffffff;
-                    border-radius: 16px;
-                    overflow: hidden;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-                    margin-bottom: 25px;
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <!-- Image -->
-                    <tr>
-                      <td align="center">
-                        <!-- IMAGE 1 PATH (USER WILL CHANGE THIS) -->
-                        <img
-                          src="https://www.carterinjurylaw.com/_next/image?url=%2Fassets%2Fstatic-blogs%2Fwhen-road-conditions-cause-car-accidents-in-florida.webp&w=828&q=75"
-                          alt="Vehicle Black Box Data"
-                          width="285"
-                          class="fluid"
-                          style="
-                            display: block;
-                            border: 0;
-                            width: 100%;
-                            max-width: 285px;
-                            height: 190px;
-                            overflow: hidden;
-                            height: auto;
-                            border-radius: 16px 16px 0 0;
-                          "
-                        />
-                      </td>
-                    </tr>
-                    <!-- Content Area -->
-                    <tr>
-                      <td style="padding: 20px 15px">
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="100%"
-                        >
-                          <!-- Category and Date -->
-                          <tr>
-                            <td>
-                              <table
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                              >
-                                <tr>
-                                  <td
-                                    align="left"
-                                    style="
-                                      color: #999999;
-                                      font-family:
-                                        &quot;Inter&quot;, Helvetica, Arial,
-                                        sans-serif;
-                                      font-size: 12px;
-                                      font-weight: bold;
-                                    "
-                                  >
-                                    Auto Accidents
-                                  </td>
-                                  <td
-                                    align="right"
-                                    style="
-                                      color: #999999;
-                                      font-family:
-                                        &quot;Inter&quot;, Helvetica, Arial,
-                                        sans-serif;
-                                      font-size: 12px;
-                                    "
-                                  >
-                                    July 21, 2026
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                          <!-- Title -->
-                          <tr>
-                            <td
-                              align="left"
-                              style="
-                                color: #111111;
-                                font-family:
-                                  &quot;Inter&quot;, Helvetica, Arial,
-                                  sans-serif;
-                                font-size: 16px;
-                                font-weight: bold;
-                                line-height: 22px;
-                                padding-top: 10px;
-                                padding-bottom: 10px;
-                              "
-                            >
-                              When Road Conditions Cause Car Accidents in
-                              Florida
-                            </td>
-                          </tr>
-                          <!-- Description -->
-                          <tr>
-                            <td
-                              align="left"
-                              style="
-                                color: #666666;
-                                font-family:
-                                  &quot;Inter&quot;, Helvetica, Arial,
-                                  sans-serif;
-                                font-size: 13px;
-                                line-height: 18px;
-                                padding-bottom: 20px;
-                              "
-                            >
-                              Bad road conditions lead to dangerous crashes
-                              across Florida daily. Learn who is responsible,
-                              what evidence matters, and how injured victims can
-                              protect their legal rights after an accident...
-                            </td>
-                          </tr>
-                          <!-- Read More Button -->
-                          <tr>
-                            <td align="left">
-                              <table
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                style="margin: 0"
-                              >
-                                <tr>
-                                  <td
-                                    align="center"
-                                    style="
-                                      background-color: #e52424;
-                                      border-radius: 6px;
-                                    "
-                                  >
-                                    <!-- REDIRECT LINK 1 (USER WILL CHANGE THIS) -->
-                                    <a
-                                      href="https://www.carterinjurylaw.com/blog/when-road-conditions-cause-car-accidents-in-florida"
-                                      target="_blank"
-                                      style="
-                                        display: inline-block;
-                                        padding: 10px 20px;
-                                        color: #ffffff;
-                                        font-family:
-                                          &quot;Inter&quot;, Helvetica, Arial,
-                                          sans-serif;
-                                        font-size: 12px;
-                                        font-weight: bold;
-                                        text-decoration: none;
-                                        border-radius: 6px;
-                                        border: 1px solid #e52424;
-                                      "
-                                    >
-                                      READ MORE
-                                    </a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+          <!-- 4. BACK-TO-SCHOOL SAFETY TIPS CARD -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 0 24px 24px 24px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                style="background-color: #9ab8cf; border-radius: 28px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+                <tr>
+                  <td
+                    style="padding: 30px 25px 28px 25px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5; color: #000000; text-align: left;">
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="20"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+                    <h2
+                      style="margin: 0 0 20px 0; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 25px; color: #0f52ba; font-weight: bold; text-align: center;">
+                      Back-to-School Safety Tips
+                    </h2>
 
-                <!-- Right Card -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="285"
-                  style="
-                    background-color: #ffffff;
-                    border-radius: 16px;
-                    overflow: hidden;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-                    margin-bottom: 25px;
-                  "
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <!-- Image -->
-                    <tr>
-                      <td align="center">
-                        <!-- IMAGE 2 PATH (USER WILL CHANGE THIS) -->
-                        <img
-                          src="https://www.carterinjurylaw.com/_next/image?url=%2Fassets%2Fstatic-blogs%2Frental-car-accidents-florida-insurance-coverage.webp&w=640&q=75"
-                          alt="Pre-Existing Conditions"
-                          width="285"
-                          class="fluid"
-                          style="
-                            display: block;
-                            border: 0;
-                            width: 100%;
-                            max-width: 285px;
-                            height: 190px;
-                            overflow: hidden;
-                            height: auto;
-                            border-radius: 16px 16px 0 0;
-                          "
-                        />
-                      </td>
-                    </tr>
-                    <!-- Content Area -->
-                    <tr>
-                      <td style="padding: 20px 15px">
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="100%"
-                        >
-                          <!-- Category and Date -->
-                          <tr>
-                            <td>
-                              <table
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                              >
-                                <tr>
-                                  <td
-                                    align="left"
-                                    style="
-                                      color: #999999;
-                                      font-family:
-                                        &quot;Inter&quot;, Helvetica, Arial,
-                                        sans-serif;
-                                      font-size: 12px;
-                                      font-weight: bold;
-                                    "
-                                  >
-                                    Auto Accidents
-                                  </td>
-                                  <td
-                                    align="right"
-                                    style="
-                                      color: #999999;
-                                      font-family:
-                                        &quot;Inter&quot;, Helvetica, Arial,
-                                        sans-serif;
-                                      font-size: 12px;
-                                    "
-                                  >
-                                    July 14, 2026
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                          <!-- Title -->
-                          <tr>
-                            <td
-                              align="left"
-                              style="
-                                color: #111111;
-                                font-family:
-                                  &quot;Inter&quot;, Helvetica, Arial,
-                                  sans-serif;
-                                font-size: 16px;
-                                font-weight: bold;
-                                line-height: 22px;
-                                padding-top: 10px;
-                                padding-bottom: 10px;
-                              "
-                            >
-                              Rental Car Accidents in Florida: Understanding
-                              Insurance Coverage
-                            </td>
-                          </tr>
-                          <!-- Description -->
-                          <tr>
-                            <td
-                              align="left"
-                              style="
-                                color: #666666;
-                                font-family:
-                                  &quot;Inter&quot;, Helvetica, Arial,
-                                  sans-serif;
-                                font-size: 13px;
-                                line-height: 18px;
-                                padding-bottom: 20px;
-                              "
-                            >
-                              Learn how the Graves Amendment, Florida PIP, and
-                              rental insurance coverage options...
-                            </td>
-                          </tr>
-                          <!-- Read More Button -->
-                          <tr>
-                            <td align="left">
-                              <table
-                                border="0"
-                                cellpadding="0"
-                                cellspacing="0"
-                                style="margin: 0"
-                              >
-                                <tr>
-                                  <td
-                                    align="center"
-                                    style="
-                                      background-color: #e52424;
-                                      border-radius: 6px;
-                                    "
-                                  >
-                                    <!-- REDIRECT LINK 2 (USER WILL CHANGE THIS) -->
-                                    <a
-                                      href="https://www.carterinjurylaw.com/blog/rental-car-accidents-florida-insurance-coverage"
-                                      target="_blank"
-                                      style="
-                                        display: inline-block;
-                                        padding: 10px 20px;
-                                        color: #ffffff;
-                                        font-family:
-                                          &quot;Inter&quot;, Helvetica, Arial,
-                                          sans-serif;
-                                        font-size: 12px;
-                                        font-weight: bold;
-                                        text-decoration: none;
-                                        border-radius: 6px;
-                                        border: 1px solid #e52424;
-                                      "
-                                    >
-                                      READ MORE
-                                    </a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+                    <ul style="margin: 0; padding: 0 0 0 22px; list-style-type: disc;">
+                      <li
+                        style="margin-bottom: 16px; color: #000000; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5;">
+                        <strong
+                          style="color: #f0ac2a; font-weight: bold; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">Slow
+                          down in school zones.</strong> Give yourself extra time during morning drop-off and afternoon
+                        pickup.
+                      </li>
+                      <li
+                        style="margin-bottom: 16px; color: #000000; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5;">
+                        <strong
+                          style="color: #f0ac2a; font-weight: bold; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">Watch
+                          for pedestrians.</strong> Children may cross unexpectedly, especially near schools, bus stops,
+                        and crosswalks.
+                      </li>
+                      <li
+                        style="margin-bottom: 16px; color: #000000; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5;">
+                        <strong
+                          style="color: #f0ac2a; font-weight: bold; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">Give
+                          school buses plenty of space.</strong> Stop when required and never pass a stopped bus with
+                        its lights flashing.
+                      </li>
+                      <li
+                        style="margin-bottom: 16px; color: #000000; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5;">
+                        <strong
+                          style="color: #f0ac2a; font-weight: bold; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">Watch
+                          for bikes and scooters.</strong> Be especially alert around neighborhoods and school
+                        entrances.
+                      </li>
+                      <li
+                        style="margin-bottom: 0; color: #000000; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5;">
+                        <strong
+                          style="color: #f0ac2a; font-weight: bold; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif;">Plan
+                          for rain.</strong> September showers can make roads slippery and visibility poor, so slow down
+                        and leave extra following distance.
+                      </li>
+                    </ul>
 
-        <!-- Section 11: Video/YouTube Callout -->
-        <tr>
-          <td align="center" style="padding: 0 30px 20px 30px">
-            <!-- YOUTUBE LINK (USER WILL CHANGE THIS) -->
-            <a
-              href="https://www.youtube.com/embed/gqGRXIgJgAo?si=bF7-CIx28AMSVcx0"
-              target="_blank"
-              style="text-decoration: none; display: block"
-            >
-              <!-- VIDEO THUMBNAIL IMAGE (USER WILL CHANGE THIS) -->
-              <img
-                src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/gqGRXIgJgAo-HD.jpg"
-                alt="Why RV Crashes Are Increasing Across the Country"
-                width="590"
-                class="fluid"
-                style="
-                  display: block;
-                  border: 0;
-                  width: 100%;
-                  max-width: 590px;
-                  height: auto;
-                  border-radius: 16px;
-                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                "
-              />
-            </a>
-          </td>
-        </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-        <!-- Section 12: Recipe & Cocktail of the Month (2 columns) -->
-        <tr>
-          <td align="center" style="padding: 0 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <!-- Left Column: Recipe -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="280"
-                  style="padding-bottom: 30px"
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <!-- Image -->
-                    <tr>
-                      <td align="center" style="padding-bottom: 15px">
-                        <!-- RECIPE IMAGE PATH (USER WILL CHANGE THIS) -->
-                        <img
-                          src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/Garlic-Butter-Shrimp-Pasta.png"
-                          alt="Grilled Lemon Herb Chicken"
-                          width="280"
-                          class="fluid"
-                          style="
-                            display: block;
-                            border: 0;
-                            width: 100%;
-                            max-width: 280px;
-                            height: auto;
-                            border-radius: 16px;
-                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                          "
-                        />
-                      </td>
-                    </tr>
-                    <!-- Section Title -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 16px;
-                          font-weight: bold;
-                          border-bottom: 1px solid #111111;
-                          padding-bottom: 5px;
-                          margin-bottom: 10px;
-                        "
-                      >
-                        🍽️ Recipe of the Month | August 2026
-                      </td>
-                    </tr>
-                    <!-- Subheading -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding-top: 10px;
-                          padding-bottom: 8px;
-                        "
-                      >
-                        Garlic Butter Shrimp Pasta
-                      </td>
-                    </tr>
-                    <!-- Intro -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 18px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        Fresh, flavorful, and ready in under 30 minutes, this
-                        Garlic Butter Shrimp Pasta is the perfect weeknight
-                        meal. It's light enough for warm August evenings while
-                        still being satisfying enough for the whole family.
-                      </td>
-                    </tr>
-                    <!-- Ingredients -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 4px;
-                        "
-                      >
-                        Ingredients:
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 18px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        &bull; 8 oz linguine or spaghetti<br />
-                        &bull; 1 lb large shrimp, peeled and deveined<br />
-                        &bull; 3 tbsp unsalted butter<br />
-                        &bull; 2 tbsp olive oil<br />
-                        &bull; 4 garlic cloves, minced<br />
-                        &bull; Juice of 1 lemon<br />
-                        &bull; &frac12; tsp red pepper flakes (optional)<br />
-                        &bull; &frac14; cup grated Parmesan cheese<br />
-                        &bull; 2 tbsp fresh parsley, chopped<br />
-                        &bull; Salt and black pepper to taste
-                      </td>
-                    </tr>
-                    <!-- Directions -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 6px;
-                        "
-                      >
-                        Directions:
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 18px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        1. Cook the pasta according to package directions.
-                        Reserve &frac12; cup of pasta water before draining.<br />
-                        2. Season the shrimp with salt and pepper. Heat olive
-                        oil and 1 tablespoon of butter in a large skillet over
-                        medium-high heat. Cook the shrimp for 1&ndash;2 minutes
-                        per side until pink, then remove from the skillet.<br />
-                        3. Add the remaining butter, garlic, and red pepper
-                        flakes to the skillet. Cook for about 1 minute until
-                        fragrant.<br />
-                        4. Stir in the lemon juice and a splash of the reserved
-                        pasta water.<br />
-                        5. Return the shrimp to the skillet, add the cooked
-                        pasta, and toss everything together until well
-                        coated.<br />
-                        6. Sprinkle with Parmesan cheese and fresh parsley
-                        before serving.
-                      </td>
-                    </tr>
-                    <!-- Kitchen Tip -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 4px;
-                        "
-                      >
-                        Kitchen Tip:
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 18px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        Pair this dish with a crisp garden salad and warm garlic
-                        bread for an easy summer dinner that's perfect for
-                        family meals or entertaining guests.
-                      </td>
-                    </tr>
-                    <!-- Conclusion -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          line-height: 18px;
-                        "
-                      >
-                        Simple, fresh, and packed with flavor&mdash;this Garlic
-                        Butter Shrimp Pasta is a delicious way to enjoy the last
-                        weeks of summer!
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+          <!-- 5. SUPPORTING TAMPA STUDENTS CARD -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 0 24px 24px 24px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                style="background-color: #9ab8cf; border-radius: 28px; box-shadow: 0 4px 14px rgba(0,0,0,0.12);">
+                <tr>
+                  <td
+                    style="padding: 28px 25px; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5; color: #000000; text-align: left;">
 
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="30"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
+                    <h2
+                      style="margin: 0 0 14px 0; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 25px; color: #0f52ba; font-weight: bold; text-align: center;">
+                      Supporting Tampa Students
+                    </h2>
 
-                <!-- Right Column: Cocktail -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="280"
-                  style="padding-bottom: 30px"
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <!-- Image -->
-                    <tr>
-                      <td align="center" style="padding-bottom: 15px">
-                        <!-- COCKTAIL IMAGE PATH (USER WILL CHANGE THIS) -->
-                        <img
-                          src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/Peach-Bourbon-Smash.png"
-                          alt="Watermelon Mojito"
-                          width="280"
-                          class="fluid"
-                          style="
-                            display: block;
-                            border: 0;
-                            width: 100%;
-                            max-width: 280px;
-                            height: auto;
-                            border-radius: 16px;
-                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-                          "
-                        />
-                      </td>
-                    </tr>
-                    <!-- Section Title -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 16px;
-                          font-weight: bold;
-                          border-bottom: 1px solid #111111;
-                          padding-bottom: 5px;
-                        "
-                      >
-                        🍹 Cocktail of the Month | August 2026
-                      </td>
-                    </tr>
+                    <p
+                      style="margin: 0; font-family: 'Kefir Demibold', 'Kefir-DemiBold', 'Kefir DemiBold', 'Kefir', Georgia, serif; font-size: 15px; font-weight: bold; line-height: 1.5; color: #000000;">
+                      Back-to-school season isn't just about new backpacks and fresh notebooks. Through the Feeding
+                      Minds School Pantry Program, families at Hillsborough County schools receive free, nutritious
+                      groceries. Supporting students means supporting the whole family.
+                    </p>
 
-                    <!-- Cocktail Name -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 15px;
-                          font-weight: bold;
-                          line-height: 20px;
-                          padding: 10px 0 8px;
-                        "
-                      >
-                        Peach Bourbon Smash
-                      </td>
-                    </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                    <!-- Intro -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        Celebrate the flavors of late summer with a refreshing
-                        Peach Bourbon Smash. Sweet ripe peaches, fresh mint, and
-                        smooth bourbon come together for a cocktail that's
-                        perfect for relaxing on the patio or entertaining
-                        friends.
-                      </td>
-                    </tr>
+          <!-- 6. LET US KNOW HOW WE DID SECTION -->
+          <tr>
+            <td align="center" class="mobile-padding" style="padding: 10px 24px 28px 24px;">
+              <h2
+                style="margin: 0 0 12px 0; font-family: 'Caveat', 'Dancing Script', cursive; font-size: 46px; color: #f1c40f; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); text-align: center;">
+                Let us know how we did.
+              </h2>
 
-                    <!-- Ingredients -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 6px;
-                        "
-                      >
-                        Ingredients:
-                      </td>
-                    </tr>
+              <p
+                style="margin: 0 0 10px 0; font-family: 'Patrick Hand', 'Caveat', cursive, sans-serif; font-size: 18px; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); text-align: center; line-height: 1.4;">
+                Thank you for choosing Carter Injury Law.
+              </p>
+              <p
+                style="margin: 0; font-family: 'Patrick Hand', 'Caveat', cursive, sans-serif; font-size: 17px; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); text-align: center; line-height: 1.4; max-width: 480px;">
+                Please consider leaving us a review on Facebook. Your reviews and referrals help others find the legal
+                support they need after an accident. We truly appreciate your trust and support!
+              </p>
+            </td>
+          </tr>
 
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        &bull; 2 oz bourbon<br />
-                        &bull; &frac12; ripe peach, sliced<br />
-                        &bull; 6&ndash;8 fresh mint leaves<br />
-                        &bull; &frac12; oz fresh lemon juice<br />
-                        &bull; &frac12; oz simple syrup (adjust to taste)<br />
-                        &bull; Crushed ice<br />
-                        &bull; Peach slice and mint sprig for garnish
-                      </td>
-                    </tr>
+          <!-- 7. FOOTER BLUE BAR -->
+          <tr>
+            <td align="center" style="padding: 10px 0 0 0;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                style="background-color: #0066cc; border-radius: 14px 14px 0 0;">
+                <tr>
+                  <td
+                    style="padding: 14px 20px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-size: 13.5px; color: #ffffff; text-align: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <!-- Left Phone -->
+                        <td align="left" class="stack-column"
+                          style="color: #ffffff; font-weight: 700; font-size: 13.5px; padding: 2px 0; white-space: nowrap;">
+                          (813)922-0228
+                        </td>
+                        <!-- Center Address -->
+                        <td align="center" class="stack-column"
+                          style="color: #ffffff; font-weight: 500; font-size: 13px; padding: 2px 5px; white-space: nowrap;">
+                          3114 N. Blvd. Tampa, FL, 33603
+                        </td>
+                        <!-- Right Firm Name -->
+                        <td align="right" class="stack-column"
+                          style="color: #ffffff; font-weight: 700; font-size: 13.5px; padding: 2px 0; white-space: nowrap;">
+                          Carter Injury Law
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-                    <!-- Directions -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 6px;
-                        "
-                      >
-                        Directions:
-                      </td>
-                    </tr>
+        </table>
+        <!-- END MAIN CONTAINER -->
 
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        1. In a cocktail shaker, muddle the peach slices, mint
-                        leaves, lemon juice, and simple syrup.<br /><br />
+      </td>
+    </tr>
+  </table>
+  <!-- END OUTER TABLE -->
 
-                        2. Add the bourbon and a handful of ice.<br /><br />
+</body>
 
-                        3. Shake well until chilled.<br /><br />
-
-                        4. Strain into a rocks glass filled with crushed ice.<br /><br />
-
-                        5. Garnish with a fresh peach slice and a sprig of mint.
-                      </td>
-                    </tr>
-
-                    <!-- Mocktail Option -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 6px;
-                        "
-                      >
-                        Mocktail Option
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-bottom: 12px;
-                        "
-                      >
-                        Replace the bourbon with sparkling peach tea or ginger
-                        ale for a refreshing alcohol-free version that's equally
-                        delicious.
-                      </td>
-                    </tr>
-
-                    <!-- Cheers -->
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                          padding-bottom: 6px;
-                        "
-                      >
-                        Cheers to August!
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #333333;
-                          font-family: Arial, Helvetica, sans-serif;
-                          font-size: 13px;
-                          line-height: 20px;
-                          padding-bottom: 15px;
-                        "
-                      >
-                        Whether you're enjoying a backyard barbecue, a sunset on
-                        the porch, or a weekend gathering with friends, the
-                        Peach Bourbon Smash is a refreshing way to savor the
-                        final weeks of summer.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- Section 13: Let Us Know / Facebook Review (2 columns) -->
-        <tr>
-          <td align="center" style="padding: 10px 30px 20px 30px">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <!-- Left Column: Let us know -->
-                <td
-                  class="stack-column"
-                  valign="middle"
-                  width="260"
-                  style="padding-bottom: 25px"
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          color: #111111;
-                          font-family:
-                            &quot;Kefir Demibold&quot;,
-                            &quot;Kefir-DemiBold&quot;,
-                            &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                            Georgia, serif;
-                          font-size: 32px;
-                          font-weight: bold;
-                          line-height: 40px;
-                        "
-                      >
-                        Let us know how we did.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-
-                <!-- Spacer -->
-                <td
-                  class="stack-spacer"
-                  width="30"
-                  style="font-size: 0; line-height: 0"
-                >
-                  &nbsp;
-                </td>
-
-                <!-- Right Column: Facebook Review Card -->
-                <td
-                  class="stack-column"
-                  valign="top"
-                  width="300"
-                  style="padding-bottom: 25px"
-                >
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                    style="
-                      background-color: #0090a8;
-                      border: 2px solid #ffffff;
-                      border-radius: 20px;
-                      border-collapse: separate !important;
-                      border-spacing: 0;
-                      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-                    "
-                  >
-                    <tr>
-                      <td style="padding: 25px 20px">
-                        <table
-                          border="0"
-                          cellpadding="0"
-                          cellspacing="0"
-                          width="100%"
-                        >
-                          <tr>
-                            <td
-                              align="center"
-                              style="
-                                color: #ffffff;
-                                font-family:
-                                  &quot;Kefir Demibold&quot;,
-                                  &quot;Kefir-DemiBold&quot;,
-                                  &quot;Kefir DemiBold&quot;, &quot;Kefir&quot;,
-                                  Georgia, serif;
-                                font-size: 20px;
-                                font-weight: bold;
-                                line-height: 26px;
-                                padding-bottom: 12px;
-                              "
-                            >
-                              Leave a review on our Facebook
-                            </td>
-                          </tr>
-                          <tr>
-                            <td
-                              align="center"
-                              style="
-                                color: #ffffff;
-                                font-family: Georgia, serif;
-                                font-size: 13px;
-                                line-height: 18px;
-                              "
-                            >
-                              The support of our clients is what drives us
-                              forward. If a friend or loved one ever needs help
-                              after an injury, a referral to our team means
-                              they'll have dedicated professionals protecting
-                              what matters most.
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- Section 14: Footer Contact Info Banner (Full Width) -->
-        <tr>
-          <td align="center" style="padding: 0">
-            <table
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              width="100%"
-              style="background-color: #0090a8; border-radius: 20px 20px 0 0"
-            >
-              <tr>
-                <td style="padding: 20px 25px">
-                  <table
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                    width="100%"
-                  >
-                    <tr>
-                      <!-- Phone -->
-                      <td
-                        class="footer-col"
-                        align="left"
-                        width="33%"
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                          font-weight: bold;
-                        "
-                      >
-                        (813)922-0228
-                      </td>
-                      <!-- Address -->
-                      <td
-                        class="footer-col"
-                        align="center"
-                        width="34%"
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                        "
-                      >
-                        3114 N. Blvd. Tampa, FL, 33603
-                      </td>
-                      <!-- Brand -->
-                      <td
-                        class="footer-col"
-                        align="right"
-                        width="33%"
-                        style="
-                          color: #ffffff;
-                          font-family:
-                            &quot;Inter&quot;, Helvetica, Arial, sans-serif;
-                          font-size: 13px;
-                        "
-                      >
-                        Carter Injury Law
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </center>
-  </body>
 </html>
