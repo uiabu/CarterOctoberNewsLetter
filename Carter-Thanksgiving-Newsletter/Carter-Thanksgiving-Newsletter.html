@@ -118,8 +118,8 @@
       }
 
       .logo-banner {
-        background-color: #FFC565 !important;
-        background-image: linear-gradient(#FFC565, #FFC565) !important;
+        background-color: rgba(216, 166, 84, 0.70) !important;
+        background-image: linear-gradient(rgba(216, 166, 84, 0.35), rgba(216, 166, 84, 0.35)) !important;
       }
 
       .card-table-1 {
@@ -133,7 +133,8 @@
       }
 
       .card-title,
-      .card-title-2 {
+      .card-title-2,
+      .card-thanksgiving-wish {
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
       }
@@ -179,6 +180,7 @@
     [data-ogsc] .title-thanksgiving,
     [data-ogsc] .card-title,
     [data-ogsc] .card-title-2,
+    [data-ogsc] .card-thanksgiving-wish,
     [data-ogsc] .script-from {
       color: #ffffff !important;
     }
@@ -202,7 +204,7 @@
     }
 
     [data-ogsb] .logo-banner {
-      background-color: #FFC565 !important;
+      background-color: rgba(216, 166, 84, 0.70) !important;
     }
 
     [data-ogsb] .card-table-1 {
@@ -246,13 +248,21 @@
       }
 
       .title-happy {
-        font-size: 34px !important;
+        font-size: 38px !important;
         letter-spacing: 4px !important;
       }
 
       .title-thanksgiving {
-        font-size: 38px !important;
+        font-size: 42px !important;
         letter-spacing: 2px !important;
+      }
+
+      .script-from-img {
+        width: 75px !important;
+      }
+
+      .card-thanksgiving-wish {
+        font-size: 20px !important;
       }
 
       .script-from {
@@ -343,31 +353,35 @@
                 </tr>
 
                 <!-- HAPPY Header (Montserrat Semibold / Normal, Bigger Size with 3D Shadow) -->
-                <tr>
-                  <td align="center" style="padding: 0 10px;">
+                <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box;">
+                  <td align="center"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; padding: 0 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                     <h1 class="title-happy"
-                      style="margin: 0; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 54px; font-weight: 600; color: #ffffff; letter-spacing: 6px; text-transform: uppercase; line-height: 1.05; text-align: center; text-shadow: -2px -2px 0px rgba(33, 24, 17, 0.85), -4px -4px 0px rgba(33, 24, 17, 0.85), -8px -8px 3px rgba(59, 43, 32, 0.45);">
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; margin: 0; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 68px; font-weight: 600; color: #ffffff; letter-spacing: 6px; text-transform: uppercase; line-height: 1.05; text-align: center; text-shadow: -2px -2px 0px rgba(33, 24, 17, 0.85), -4px -4px 0px rgba(33, 24, 17, 0.85), -8px -8px 3px rgba(59, 43, 32, 0.45);">
                       HAPPY
                     </h1>
                   </td>
                 </tr>
 
                 <!-- THANKSGIVING Header (Montserrat Semibold / Normal, Bigger Size with 3D Shadow) -->
-                <tr>
-                  <td align="center" style="padding: 0 10px 15px 10px;">
+                <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box;">
+                  <td align="center"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; padding: 0 10px 15px 10px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                     <h1 class="title-thanksgiving"
-                      style="margin: 0; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 58px; font-weight: 600; color: #ffffff; letter-spacing: 2.5px; text-transform: uppercase; line-height: 1.02; text-align: center; text-shadow: -2px -2px 0px rgba(33, 24, 17, 0.85), -4px -4px 0px rgba(33, 24, 17, 0.85), -8px -8px 3px rgba(59, 43, 32, 0.45);">
+                      style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; box-sizing: border-box; margin: 0; font-family: 'Montserrat', Arial, Helvetica, sans-serif; font-size: 68px; font-weight: 600; color: #ffffff; letter-spacing: 2.5px; text-transform: uppercase; line-height: 1.02; text-align: center; text-shadow: -2px -2px 0px rgba(33, 24, 17, 0.85), -4px -4px 0px rgba(33, 24, 17, 0.85), -8px -8px 3px rgba(59, 43, 32, 0.45);">
                       THANKSGIVING
                     </h1>
                   </td>
                 </tr>
 
-                <!-- Cursive "from" Overlay -->
+                <!-- Cursive "from" Overlay Image -->
                 <tr>
-                  <td align="center" style="padding: 0 20px; position: relative; z-index: 2;">
-                    <div class="script-from"
-                      style="margin: -10px 0 -8px 0; font-family: 'Island Moments', cursive, 'Brush Script MT', serif; font-size: 38px; font-weight: 400; color: rgba(255, 255, 255, 0.95); text-align: center; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">
-                      FROM
+                  <td align="center"
+                    style="padding: 0 20px; position: relative; z-index: 5; line-height: 0; font-size: 0;">
+                    <div style="margin: -10px auto -15px auto; display: inline-block;">
+                      <img src="https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/from.png" alt="FROM"
+                        width="95" class="script-from-img"
+                        style="display: block; width: 95px; max-width: 100%; height: auto; border: 0; outline: none; margin: 0 auto;" />
                     </div>
                   </td>
                 </tr>
@@ -403,9 +417,9 @@
                         <td class="card-pad-1"
                           style="padding: 30px 24px 28px 24px; border-radius: 20px; -webkit-border-radius: 20px; text-align: center;">
 
-                          <!-- Card 1 Heading (Playfair Display) -->
+                          <!-- Card 1 Heading (GFS Didot) -->
                           <h2 class="card-title"
-                            style="margin: 0 0 14px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 700; color: #ffffff; text-align: center; line-height: 1.2; text-shadow: 0 1px 3px rgba(0,0,0,0.28); letter-spacing: 0.2px;">
+                            style="margin: 0 0 14px 0; font-family: 'GFS Didot', 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 400; color: #ffffff; text-align: center; line-height: 1.2; text-shadow: 0 1px 3px rgba(0,0,0,0.28); letter-spacing: 0.2px;">
                             We are thankful for you!
                           </h2>
 
@@ -429,13 +443,17 @@
                               laughter, and cherished memories.
                             </p>
                             <p style="margin: 0 0 7px 0;">
-                              Thank you for allowing us to be in your corner. Happy Thanksgiving! &#129505;
+                              Thank you for allowing us to be in your corner.
+                            </p>
+                            <p class="card-thanksgiving-wish"
+                              style="margin: 14px 0 6px 0; font-family: 'GFS Didot', 'Playfair Display', Georgia, serif; font-size: 24px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; text-shadow: 0 1px 3px rgba(0,0,0,0.35); text-align: center;">
+                              HAPPY THANKSGIVING! &#129505;
                             </p>
                           </div>
 
-                          <!-- Team Signature (Playfair Display Italic - with Dash) -->
+                          <!-- Team Signature (GFS Didot Italic - with Dash) -->
                           <p class="card-signature"
-                            style="margin: 16px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 17px; font-style: italic; font-weight: 700; color: #1a0f03; text-align: center; letter-spacing: 0.2px;">
+                            style="margin: 16px 0 0 0; font-family: 'GFS Didot', 'Playfair Display', Georgia, serif; font-size: 17px; font-style: italic; font-weight: 400; color: #1a0f03; text-align: center; letter-spacing: 0.2px;">
                             &mdash; The Carter Injury Law Team
                           </p>
 
@@ -495,9 +513,9 @@
                         <td class="card-pad-2"
                           style="padding: 24px 22px 24px 22px; border-radius: 20px; -webkit-border-radius: 20px; text-align: center;">
 
-                          <!-- Card 2 Heading (Playfair Display - Bigger) -->
+                          <!-- Card 2 Heading (GFS Didot) -->
                           <h2 class="card-title-2"
-                            style="margin: 0 0 20px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 38px; font-weight: 700; color: #ffffff; text-align: center; line-height: 1.15; text-shadow: 0 1px 3px rgba(0,0,0,0.28); letter-spacing: 0.2px;">
+                            style="margin: 0 0 8px 0; font-family: 'GFS Didot', 'Playfair Display', Georgia, serif; font-size: 38px; font-weight: 400; color: #ffffff; text-align: center; line-height: 1.2; text-shadow: 0 1px 3px rgba(0,0,0,0.28); letter-spacing: 0.2px;">
                             Celebrate the season with<br />these local events:
                           </h2>
 
